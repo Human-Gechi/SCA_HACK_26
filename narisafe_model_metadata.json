@@ -1,0 +1,61 @@
+{
+  "target": "risk_level",
+  "classes_in_order": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "features": [
+    "hour",
+    "area_context",
+    "crowd_density",
+    "lighting_score",
+    "complaint_severity",
+    "complaint_type_count",
+    "women_crime_rate_2023",
+    "chargesheeting_rate_2023",
+    "women_crime_growth_21_23",
+    "police_station_count_5km",
+    "nearest_police_station_km"
+  ],
+  "weighting": "sqrt",
+  "xgb_params": {
+    "objective": "multi:softprob",
+    "eta": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist",
+    "seed": 42,
+    "max_depth": 3,
+    "min_child_weight": 200
+  },
+  "rounds": 225,
+  "locked_test_cities": [
+    "Faridabad",
+    "Kota",
+    "Meerut",
+    "Prayagraj",
+    "Ranchi",
+    "Thiruvananthapuram",
+    "Thrissur"
+  ],
+  "metrics_grouped_cv": {
+    "accuracy": 0.892128279883382,
+    "balanced_acc": 0.8380169229206462,
+    "macro_F1": 0.8494678064523086,
+    "recall_high": 0.7038657913931436,
+    "QWK": 0.8302439845510329,
+    "MAE_levels": 0.10787172011661808
+  },
+  "metrics_locked_test": {
+    "accuracy": 0.9251700680272109,
+    "balanced_acc": 0.9294939499585836,
+    "macro_F1": 0.8843847701431103,
+    "recall_high": 0.9203296703296703,
+    "QWK": 0.8801681428909006,
+    "MAE_levels": 0.07482993197278912
+  },
+  "trained_on_rows": 69972,
+  "trained_on_cities": 34
+}
