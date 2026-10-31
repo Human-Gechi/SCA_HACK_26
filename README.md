@@ -34,10 +34,10 @@ Because only about 5% of rows are `high` risk, and missing a high-risk situation
 
 ```
 .
-├── narisafe_eda_model_final.ipynb      # Full EDA + modelling notebook
+├── narisafe_eda_model.ipynb      # Full EDA + modelling notebook
 ├── narisafe_risk_pipeline.joblib       # Saved preprocessing + XGBoost pipeline
 ├── narisafe_model_metadata.json        # Features, params, metrics, locked test cities
-├── women_risk_awareness_-_narisafe_ml_features.csv   # Provided dataset (add if permitted)
+├── women_risk_awareness_-_narisafe_ml_features.csv
 └── README.md
 ```
 
