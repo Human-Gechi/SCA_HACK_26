@@ -38,7 +38,6 @@ Because only about 5% of rows are `high` risk, and missing a high-risk situation
 ├── narisafe_eda_model.ipynb      # Full EDA + modelling notebook
 ├── narisafe_risk_pipeline.joblib       # Saved preprocessing + XGBoost pipeline
 ├── narisafe_model_metadata.json        # Features, params, metrics, locked test cities
-├── women_risk_awareness_-_narisafe_ml_features.csv
 └── README.md
 ```
 
@@ -192,7 +191,7 @@ Permutation importance was computed on the **unseen locked-test cities** (drop i
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib jupyter
    ```
-3. **Add the dataset** (`women_risk_awareness_-_narisafe_ml_features.csv`) to the project root or update the `FILE` path in the notebook's loading cell.
+3. **Add the dataset** to the project root or update the `FILE` path in the notebook's loading cell.
 4. **Run the notebook**
    ```bash
    jupyter notebook narisafe_eda_model.ipynb
